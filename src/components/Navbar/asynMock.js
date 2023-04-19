@@ -35,4 +35,18 @@ const products = [{
     description:"Moneda argentina antigüa de Niquel"
 }];
 
-export const getProducts= () => 
+export const getProducts= () => {
+    return new Promise((resolve) => {
+        setTimeout(() =>{
+            resolve(product)
+        },500)
+    })
+}
+
+export const getProductById = (productId) => {
+    return new Promise((resolve) => {
+        setTimeout (() => {
+            resolve(products.find (prod => prod.id === productId))
+        },500)
+    })
+}
