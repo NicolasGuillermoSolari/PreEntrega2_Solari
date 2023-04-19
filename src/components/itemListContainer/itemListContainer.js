@@ -1,4 +1,19 @@
+import (getProducts) from "../../asynMock"
+import ItemList from "../ItemList/ItemList"
+
 const itemListContainer = ({ greeting }) => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    getProducts()
+      .then((response) => {
+        setProducts(response);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
   return (
     <div>
       <h1>{greeting}</h1>
