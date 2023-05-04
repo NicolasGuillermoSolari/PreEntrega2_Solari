@@ -1,7 +1,7 @@
-import (getProducts) from "../../asynMock"
-import ItemList from "../ItemList/ItemList"
+import { getProducts } from "../../asynMock";
+import { ItemList } from "../ItemList/ItemList";
 
-const itemListContainer = ({ greeting }) => {
+const ItemListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -21,4 +21,4 @@ const itemListContainer = ({ greeting }) => {
   );
 };
 
-export default itemListContainer;
+export default ItemListContainer;

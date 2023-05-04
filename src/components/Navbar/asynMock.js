@@ -1,52 +1,54 @@
-const products = [{
-    id:"1",
-    name:"2 cts de Patacón",
+const products = [
+  {
+    id: "1",
+    name: "1 cts de Patacón",
     price: 500,
     Category: "cobres",
-    img:,
-    stock:3,
-    description:"Moneda argentina antigüa de Cobre"
-},
-{
-    id:"2",
-    name:"5 cts de Patacón",
+    img: "https://colnect.com/es/coins/coin/1023-1_Centavo-1881~1896_-_Moneda_Nacional_1st_circulation-Argentina",
+    stock: 3,
+    description: "Moneda argentina antigüa de Cobre",
+  },
+  {
+    id: "2",
+    name: "2 cts de Patacón",
     price: 750,
     Category: "cobres",
-    img:,
-    stock:6,
-    description:"Moneda argentina antigüa de Cobre"
-},
-{
-    id:"3",
-    name:"1 de Patacón",
+    img: "https://colnect.com/es/coins/coin/1033-2_Centavos-1881~1896_-_Moneda_Nacional_1st_circulation-Argentina",
+    stock: 6,
+    description: "Moneda argentina antigüa de Cobre",
+  },
+  {
+    id: "3",
+    name: "10 ctvs de Patacón",
     price: 1200,
     Category: "plata",
-    img:,
-    stock:3,
-    description:"Moneda argentina antigüa de Plata"
-},
-{
-    id:"4",
-    name:"10 ctas 1930",
-    price: 400,
+    img: "https://colnect.com/es/coins/coin/1047-10_Centavos-1881~1896_-_Moneda_Nacional_1st_circulation-Argentina",
+    stock: 3,
+    description: "Moneda argentina antigüa de Plata",
+  },
+  {
+    id: "4",
+    name: "5 pesos de Patacón",
+    price: 1400,
     Category: "niquel",
-    img:,
-    stock:8,
-    description:"Moneda argentina antigüa de Niquel"
-}];
+    img: "https://colnect.com/es/coins/coin/18693-5_Pesos_1_Argentino-1881~1896_-_Moneda_Nacional_1st_circulation-Argentina",
+    stock: 2,
+    description: "Moneda argentina antigüa de Niquel",
+  },
+];
 
-export const getProducts= () => {
-    return new Promise((resolve) => {
-        setTimeout(() =>{
-            resolve(product)
-        },500)
-    })
-}
+export const getProducts = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(product);
+    }, 500);
+  });
+};
 
 export const getProductById = (productId) => {
-    return new Promise((resolve) => {
-        setTimeout (() => {
-            resolve(products.find (prod => prod.id === productId))
-        },500)
-    })
-}
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products.find((prod) => prod.id === productId));
+    }, 500);
+  });
+};

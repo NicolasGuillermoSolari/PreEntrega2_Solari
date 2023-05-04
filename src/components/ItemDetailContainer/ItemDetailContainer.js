@@ -1,7 +1,7 @@
 import { getProductsById } from "../Navbar/asynMock";
-import ItemDetail from "../ItemDetail/ItemDetail";
+import { ItemDetail } from "./ItemDetail/ItemDetail";
 
-constItemDetailContainer = () => {
+const ItemDetailContainer = () => {
   const [product, setProduct] = useState(null);
 
   useEffedt(() => {
