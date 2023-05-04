@@ -1,6 +1,6 @@
 import { icon_carrito } from "./assets/icon_carrito.svg";
 
-const cartWidget = () => {
+const CartWidget = () => {
   return (
     <div>
       <img src={icon_carrito} alt="Carrito de compras" />0
@@ -8,4 +8,4 @@ const cartWidget = () => {
   );
 };
 
-export default cartWidget;
+export default CartWidget;

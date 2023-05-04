@@ -4,12 +4,12 @@ import "./ItemCount.css";
 const ItemCount = ({ stock, initial, onAdd }) => {
   const [quality, setQuality] = useState(initial);
 
-  const increment = () => {
+  const Increment = () => {
     if (quality < stock) {
       setQuality(quality + 1);
     }
   };
-  const decrement = () => {
+  const Decrement = () => {
     if (quality > 1) {
       setQuality(quality - 1);
     }
@@ -18,9 +18,9 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   return (
     <div className="Counter">
       <div className="Controls">
-        <button className="Button" onClick={decrement}></button>
+        <button className="Button" onClick={Decrement}></button>
         <h4 className="Number">{quality}</h4>
-        <button className="Button" onClick={increment}></button>
+        <button className="Button" onClick={Increment}></button>
       </div>
       <div>
         <button
