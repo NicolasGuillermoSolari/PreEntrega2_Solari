@@ -1,11 +1,11 @@
-import { getProductsById } from "../NavBar/asynMock";
-import ItemDetail from "./ItemDetail/ItemDetail";
+import { GetProductById } from "../NavBar/asynMock";
+import ItemDetail from "./ItemDetail/itemDetail";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState(null);
 
-  useEffedt(() => {
-    getProductsById("1")
+  useEffect(() => {
+    GetProductById("1")
       .then((response) => {
         setProduct(response);
       })

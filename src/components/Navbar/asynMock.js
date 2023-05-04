@@ -1,4 +1,4 @@
-const products = [
+const Products = [
   {
     id: "1",
     name: "1 cts de Patacón",
@@ -37,18 +37,18 @@ const products = [
   },
 ];
 
-export const getProducts = () => {
+export const GetProducts = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(product);
+      resolve(Products);
     }, 500);
   });
 };
 
-export const getProductById = (productId) => {
+export const GetProductById = (productId) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(products.find((prod) => prod.id === productId));
+      resolve(Products.find((prod) => prod.id === productId));
     }, 500);
   });
 };
