@@ -1,5 +1,5 @@
-import { getProductsById } from "../Navbar/asynMock";
-import { ItemDetail } from "./ItemDetail/ItemDetail";
+import { getProductsById } from "../NavBar/asynMock";
+import ItemDetail from "./ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState(null);

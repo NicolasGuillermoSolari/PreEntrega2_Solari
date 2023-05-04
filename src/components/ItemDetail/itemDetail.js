@@ -15,8 +15,14 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
         <p className="Info">precio: {price}</p>
       </section>
       <footer className="ItemFooter">
-        <ItemCount initial={1} stock={stock} onAdd = {quantify} => console.log ("cantidad agregada") />
+        <ItemCount
+          initial={1}
+          stock={stock}
+          onAdd={() => console.log("cantidad agregada")}
+        />
       </footer>
     </article>
   );
 };
+
+export default ItemDetail;
