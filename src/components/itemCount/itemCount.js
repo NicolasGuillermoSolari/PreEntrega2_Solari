@@ -1,31 +1,35 @@
-import React, { useState } from "react";
 import "./ItemCount.css";
+import React, { useState } from "react";
 
 const ItemCount = ({ stock, initial, onAdd }) => {
-  const [quality, setQuality] = useState(initial);
+  const [quantity, setQuantity] = useState(initial);
 
   const Increment = () => {
-    if (quality < stock) {
-      setQuality(quality + 1);
+    if (quantity < stock) {
+      setQuantity(quantity + 1);
     }
   };
   const Decrement = () => {
-    if (quality > 1) {
-      setQuality(quality - 1);
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
     }
   };
 
   return (
     <div className="Counter">
       <div className="Controls">
-        <button className="Button" onClick={Decrement}></button>
-        <h4 className="Number">{quality}</h4>
-        <button className="Button" onClick={Increment}></button>
+        <button className="Button" onClick={Decrement}>
+          -
+        </button>
+        <h4 className="Number">{quantity}</h4>
+        <button className="Button" onClick={Increment}>
+          +
+        </button>
       </div>
       <div>
         <button
           className="Button"
-          onClick={() => onAdd(quality)}
+          onClick={() => onAdd(quantity)}
           disabled={!stock}
         ></button>
       </div>

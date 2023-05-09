@@ -1,8 +1,8 @@
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 
-import ItemListContainer from "./components/itemListContainer/itemListContainer";
-import ItemCount from "./components/itemCount/itemCount";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemCount from "./components/ItemCount/ItemCount";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 function App() {

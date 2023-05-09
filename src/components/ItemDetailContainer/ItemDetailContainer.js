@@ -1,4 +1,4 @@
-import { GetProductById } from "../NavBar/asynMock";
+import { GetProductById } from "../NavBar/asyncMock";
 import ItemDetail from "./ItemDetail/itemDetail";
 
 const ItemDetailContainer = () => {
